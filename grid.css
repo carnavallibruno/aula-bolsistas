@@ -1,0 +1,15 @@
+.header__profile {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__profile>p {
+  margin-right: 10px;
+}
+
+.header__profile>select {
+  margin-right: 25px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}

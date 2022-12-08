@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+
+        body{
+            margin:0;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr;
+        }
+
+        header{
+            grid-column: 2;
+            grid-row: 1;
+            background: #F77F00;
+            height: 50px;
+            width: 100%;
+        }
+
+        aside{
+            width:200px;
+            background: #003049;
+            grid-column: 1;
+            height: 600px;
+            grid-row: span 2;
+        }
+
+        
+        section{
+            background: #FCBF49;
+            grid-row:2;
+            grid-column: 2;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class='header__profile'>
+                <p>Ruan Oliveira</p>
+                <select></select>
+            </div>
+        </header>
+        <aside>
+            <ul class="lateral__menu__list">
+                <li class="menu__list--item menu__list--active "><i>Inicio</i></li>
+                <li class="menu__list--item"><i>Videos</i></li>
+                <li class="menu__list--item"><i>Picos</i></li>
+                <li class="menu__list--item"><i>Integrantes</i></li>
+                <li class="menu__list--item"><i>Camisas</i></li>
+                <li class="menu__list--item"><i>Pinturas</i></li>
+            </ul>
+        </aside>
+        <section>Section</section>
+    </main>
+</body>
+</html>
